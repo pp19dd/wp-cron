@@ -7,7 +7,7 @@ That is, if you can call `sleep(5)` a queueing. `;)`
 
 #### What the script does
 
-First, it makes sure another copy of itself isn't running. If it is, it exits. Otherwise, it grabs a list of blogs from MySQL and loops through them, pulling up `/wp-cron.php?doing_wp_cron`.  The script then sleeps for 5 seconds and moves onto the next entry. If any of the entries fails (does not return HTTP status code 200), it exits.
+First, it makes sure another copy of itself isn't running. If it is, it exits. Otherwise, it grabs a list of blogs from MySQL and loops through them, pulling up `/wp-cron.php?doing_wp_cron`.  The script then sleeps for 5 seconds and moves onto the next entry. If any of the entries fail (does not return HTTP status code 200), it exits.
 
 #### Why?
 
