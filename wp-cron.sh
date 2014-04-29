@@ -48,7 +48,7 @@ status_ok="200";
 
 # ----------------------------------------------------------------------------
 # pull each blog's wp-cron via curl, then wait 5 seconds
-# exit if the site is unavailable or returns any htto code other than 200
+# exit if the site is unavailable or returns any http code other than 200
 # ----------------------------------------------------------------------------
 
 for blog in $blogs; do
