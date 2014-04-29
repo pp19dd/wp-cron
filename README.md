@@ -13,9 +13,9 @@ First, it makes sure another copy of itself isn't running. If it is, it exits. O
 
 WordPress cron can be a pain in the neck. For larger blog installations (multisite), conventional wisdom (or lackthere of) is/was to decouple WordPress' native cron checking from WordPress, and run it when it's convenient for you.  Or rather, don't let WordPress decide when to make internal HTTP calls for its cron function.  Your access_log file might contain a number of entries like this:
 
-    127.0.0.1 - - [27/Apr/2014:04:58:58 +0200] "POST /wp-cron.php?doing_wp_cron=1398567538.0118000507354736328125 HTTP/1.0"
-    127.0.0.1 - - [27/Apr/2014:14:14:57 +0200] "POST /wp-cron.php?doing_wp_cron=1398600897.0319790840148925781250 HTTP/1.0"
-    127.0.0.1 - - [27/Apr/2014:15:01:39 +0200] "POST /wp-cron.php?doing_wp_cron=1398603699.5494239330291748046875 HTTP/1.0"
+    127.0.0.1 - - [27/Apr/2014:04:58:58 +0200] "POST /wp-cron.php?doing_wp_cron=1398567538.011..."
+    127.0.0.1 - - [27/Apr/2014:14:14:57 +0200] "POST /wp-cron.php?doing_wp_cron=1398600897.031..."
+    127.0.0.1 - - [27/Apr/2014:15:01:39 +0200] "POST /wp-cron.php?doing_wp_cron=1398603699.549..."
 
 #### Ok, how?
 
